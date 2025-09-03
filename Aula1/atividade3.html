@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestão Acadêmica</title>
+</head>
+
+<body>
+    
+        
+        <h1 style="background-color: brown">Sistema de Gestão Acadêmica</h1>
+        <h2> Manutenção de Usuários do sistemas interno</h2>
+        <form>
+            <table>
+                <tr>
+                    <td><label for="login">Login</label></td>
+                    <td><input type="text" required></td>
+                </tr>   
+               <tr>
+                    <td><label> <for="senha">Senha</for></label></td>
+                    <td><input type="password"></td>
+               </tr>
+               <tr>
+                <td><label for="status">Status</label></td>
+                <td>
+                    <select id="status" >
+                        <option value="inativo" selected>Inativo</option>
+                        <option value="ativo">Ativo</option>
+                    </select>
+                </td>
+            </tr>
+            
+            <tr>
+                <td><label>Tipo</label></td>
+                <td>
+                    <input type="radio" value="tecnico">
+                    <label for="tecnico">Técnico</label>
+                    
+                    <input type="radio" value="professor">
+                    <label for="professor">Professor</label>
+                    
+                    <input type="radio"  value="aluno">
+                    <label for="aluno">Aluno</label>
+                </td>
+            </tr>
+            
+            <tr>
+                <td><label for="dataCriacao">Data Criação</label></td>
+                <td><input type="date" ></td>
+            </tr>
+            
+            <tr>
+                <td><label>Perfil</label></td>
+                <td>
+                    <input type="radio" value="convidado">
+                    <label for="convidado">Convidado</label>
+                    
+                    <input type="radio" value="administrador">
+                    <label for="administrador">Administrador</label>
+                </td>
+            </tr>
+            
+            <tr>
+                <td><label for="observacoes">Observações</label></td>
+                <td><textarea id="observacoes"  rows="5" cols="40"></textarea></td>
+            </tr>
+            
+            <tr>
+                <td><label>Módulos</label></td>
+                <td>
+                    <input type="checkbox"  value="compras">
+                    <label for="compras">Compras</label>
+                    
+                    <input type="checkbox"  value="biblioteca">
+                    <label for="biblioteca">Biblioteca</label>
+                    
+                    <input type="checkbox" value="academico">
+                    <label for="academico">Acadêmico</label>
+                    <br><br>
+                    
+                    <input type="checkbox" value="documentacao">
+                    <label for="documentacao">Documentação</label>
+                    
+                    <input type="checkbox"  value="recursosHumanos">
+                    <label for="recursosHumanos">Recursos Humanos</label>
+                </td>
+            </tr>
+            
+            <tr>
+                <td colspan="2">
+                    <br>
+                    <input type="submit" value="Cadastrar">
+                    <input type="button" value="Excluir">
+                </td>
+            </tr>
+
+            </table>
+        </form>
+
+
+    
+
+
+
+</body>
+
+</html>
