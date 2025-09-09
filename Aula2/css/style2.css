@@ -1,0 +1,21 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#formatacao{
+    font-size: 24px;
+            text-align: center;
+            text-transform:uppercase;
+            color: #4caf50;
+            
+}
+
+div{
+   
+    border:solid 1px;
+    padding: 8px;
+}
+
+p{
+    color: #008CBA;
+}

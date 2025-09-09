@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS</title>
     <!--CSS externo-->
-    <link href="css/style.css" type="text/css">
+    <link href="css/style.css" rel="stylesheet">
 
     <!--CSS interno-->
     <style>
+        *{
+            font-size: 12px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight:  lighter;
+            font-style: italic;
+        }
+
         h1 {
             color: blue;
         }
@@ -17,11 +24,26 @@
             color: rgb(0, 255, 0);
         }
 
-        body{
-            background-color: cadetblue;
-        }
+    
         div{
             background-color: black;
+        }
+
+        #titulo{
+            background-color: cadetblue;
+
+        }
+
+        .titulo2{
+            background-color: brown;
+        }
+
+        .paragrafo{
+            background-color: red;
+        }
+
+        #paragrafo{
+            background-color: blue;
         }
 
         
@@ -33,19 +55,21 @@
         <h1 style="color: red; font-size: 18px;">CSS - Cascading Style Sheets</h1>
 
         <!--interno-->
-        <h1>Primeira aula de CSS</h1>
+        <h1 class="titulo2">Primeira aula de CSS</h1>
+
+        <p class="titulo2"> 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt modi facilis incidunt est, quam quidem dolorum 
+            repellendus quo alias hic accusamus quae libero officia quis. Repellendus deserunt et consectetur provident?
+        </p>
+
+        <h1 id="titulo">Primeira aula de CSS</h1>
 
         <p> 
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt modi facilis incidunt est, quam quidem dolorum 
             repellendus quo alias hic accusamus quae libero officia quis. Repellendus deserunt et consectetur provident?
         </p>
 
-        <h1>Primeira aula de CSS</h1>
-
-        <p> 
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt modi facilis incidunt est, quam quidem dolorum 
-            repellendus quo alias hic accusamus quae libero officia quis. Repellendus deserunt et consectetur provident?
-        </p>
+        <p id="paragrafo" class="paragrafo" style="background-color: crimson;">Especifidades do CSS</p>
 
         <div>
 
