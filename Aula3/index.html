@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+</head>
+<style>
+body{
+    text-align: center;
+}
+
+
+.bloco1,.bloco2,.bloco3{
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+}
+
+    .bloco1{
+        background-color: blue;
+    }
+    .bloco2{
+        background-color: yellow;
+        
+        position: relative;
+        top: 160px;
+        left: 160px;
+        z-index: 10;
+    }
+    .bloco3{
+        background-color: red;
+    }
+
+    img {
+        float: right;
+    }
+    .parágrafo-baixo{
+        clear: right;
+    }
+</style>
+<body>
+    
+    <div class="bloco1">
+        Bloco 1
+        
+    </div>
+    <div class="bloco2">
+        Bloco 2
+    </div>
+    <div class="bloco3">
+        Bloco 3
+    </div>
+
+    <br>
+
+    <img src="vorinclex.jpg" alt="">
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, quia illum laborum facere vitae, vel laboriosam provident minima fugit reiciendis veritatis dolores repellat sunt culpa, placeat unde! Quaerat, sequi ducimus.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque asperiores neque provident dolorum quo architecto reiciendis doloribus accusamus soluta, eligendi, laboriosam repudiandae optio tenetur ex illum adipisci hic aliquid porro!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis ipsam laudantium esse fugit, reiciendis, laborum distinctio, eos blanditiis omnis ex voluptatem. Quae possimus architecto, ipsum in ad labore harum beatae.
+    </p>
+    
+    <p class="parágrafo-baixo">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, quia illum laborum facere vitae, vel laboriosam provident minima fugit reiciendis veritatis dolores repellat sunt culpa, placeat unde! Quaerat, sequi ducimus.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque asperiores neque provident dolorum quo architecto reiciendis doloribus accusamus soluta, eligendi, laboriosam repudiandae optio tenetur ex illum adipisci hic aliquid porro!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis ipsam laudantium esse fugit, reiciendis, laborum distinctio, eos blanditiis omnis ex voluptatem. Quae possimus architecto, ipsum in ad labore harum beatae.
+    </p>
+</body>
+</html>

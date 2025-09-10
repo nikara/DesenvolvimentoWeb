@@ -1,21 +1,39 @@
 *{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
 }
-
-#formatacao{
-    font-size: 24px;
-            text-align: center;
-            text-transform:uppercase;
-            color: #4caf50;
-            
-}
-
 div{
    
-    border:solid 1px;
-    padding: 8px;
+    border:solid 1px gray;
+    padding: 100px;
+    margin: 50px;
+}
+#parágrafo{
+
+    height: 200px;
+    width: 100px;
+    background-color: brown;
+
+}
+
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: #4caf50;
+    text-shadow: 0 0 10px #f00;
 }
 
 p{
-    color: #008CBA;
+    text-indent: 50px;
+    text-align: justify;
+    letter-spacing: 3px;
+
+}
+
+a{
+    text-decoration: none;
+    color: #008cba;
+    border: 1px dotted green;
+    padding: 10px;
 }
