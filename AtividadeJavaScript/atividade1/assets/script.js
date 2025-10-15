@@ -11,10 +11,9 @@ programa que calcule e escreva:
 const sexoArray = [];
 for( let i = 0; i < 15; i++){
     const numeroBinario = Math.floor(Math.random()*2);
-    if(valor === 0){
+    if(numeroBinario === 0){
         sexoArray.push("M");
-        break;
-    }else if(valor === 1){
+    }else if(numeroBinario === 1){
         sexoArray.push("F");
         
     }
@@ -25,9 +24,11 @@ for( let i = 0; i < 15; i++){
 
 const alturaArray = [];
 for (let i = 0; i < 15; i++){
-    const altura = (Math.random() * (2.00 - 1.50.toFixed(2)));
+    const altura = (Math.random() * (2.00 - 1.50) + 1.50);
     alturaArray.push(altura)
 }
 
 // Maior e Menor Alturas
+
+
 
