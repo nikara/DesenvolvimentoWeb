@@ -65,7 +65,7 @@ pessoas.forEach((pessoa,index) => {
 });
 
 const dados = document.getElementById("resumoDados");
-resumo.innerHTML =`
+dados.innerHTML =`
 Maior altura: ${maior}m<br>
 Menor altura: ${menor}m<br>
 Média de altura das mulheres: ${media}m<br>
