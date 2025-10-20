@@ -3,6 +3,6 @@ body{
     padding: 20px;
 }
 label,input,select{
-    display: block;
     margin-bottom: 10px;
+    cursor: pointer;
 }
