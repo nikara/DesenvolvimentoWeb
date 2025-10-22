@@ -18,7 +18,7 @@ botao.addEventListener('click', function(){
     texto.innerText = `
     Promoção: ${modelo}
     Entrada de R$: ${promocao}
-    + 12x de R$: ${saldo}
+    + 12x de R$: ${saldo.toFixed(2)}
     `;
 
     document.body.appendChild(texto);
