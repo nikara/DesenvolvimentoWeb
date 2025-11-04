@@ -6,24 +6,25 @@ apresente as mensagens indicando a promoção.
 
 */
 
-const botao = document.getElementById('button');
-botao.addEventListener('click', function(){
-    
-    const valor = Number(document.getElementById('valor').value);
-    const tempo = Number(document.getElementById("tempo").value);
+ const botao = document.getElementById('button');
 
-    const mediaDoTempo = Math.ceil(tempo/15);
+    botao.addEventListener('click', function() {
+      const descricao = document.getElementById('descricao').value;
+      const preco = Number(document.getElementById('preco').value);
 
-    const total = mediaDoTempo * valor;
+      if (!descricao || preco <= 0) {
+        alert("Preencha os campos corretamente!");
+        return;
+      }
 
-    let texto = document.createElement('div');
-    texto.innerHTML = `
-    Valor a Pagar R$ ${total.toFixed(2)}
-    `;
+      // cálculo da promoção
+      const total = preco * 2.5; 
 
-    document.body.appendChild(texto);
-
-});
-
-
-
+      const resultado = document.getElementById('resultado');
+      resultado.innerHTML = `
+        <p><strong>Produto:</strong> ${descricao}</p>
+        <p>Preço Unitário: R$ ${preco.toFixed(2)}</p>
+        <p><strong>Promoção:</strong> Leve 3 unidades por R$ ${total.toFixed(2)}</p>
+        <p>(Na compra de 3, o 3º sai com 50% de desconto!)</p>
+      `;
+    });
